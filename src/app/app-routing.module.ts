@@ -13,6 +13,12 @@ import { AccessPageComponent } from './components/access-page/access-page.compon
 import { RuleslistComponent } from './components/ruleslist/ruleslist.component';
 import { AssigneerankingComponent } from './components/assigneeranking/assigneeranking.component';
 import { CreatedVsResolvedComponent } from './components/created-vs-resolved/created-vs-resolved.component';
+import { WorkerslistComponent } from './components/workerslist/workerslist.component';
+import { ForgotPasswordPageComponent } from './components/forgot-password-page/forgot-password-page.component';
+import { ResetPasswordFormComponent } from './components/reset-password-form/reset-password-form.component';
+import { UpdateDatabaseComponent } from './components/update-database/update-database.component';
+import { VersionsComponent } from './components/versions/versions.component';
+import { ListUsersComponent } from './components/list-users/list-users.component';
 
 const routes: Routes = [
   { path: '', component: LoginPageComponent },
@@ -24,9 +30,15 @@ const routes: Routes = [
   { path: 'assignee-details',canActivate:[AuthAdminGuard], component: AssigneeDetailsComponent },
   { path: 'versatility-index',canActivate:[AuthAdminGuard], component: AssigneeindexComponent },
   { path: 'Sign-up', component: SigninPageComponent },
-  { path: 'rules', component: RuleslistComponent },
-  { path: 'ranking', component: AssigneerankingComponent },
-  { path: 'createdresolved', component: CreatedVsResolvedComponent },
+  { path: 'rules',canActivate:[AuthAdminGuard], component: RuleslistComponent },
+  { path: 'ranking', canActivate:[AuthAdminGuard],component: AssigneerankingComponent },
+  { path: 'createdresolved',canActivate:[AuthAdminGuard], component: CreatedVsResolvedComponent },
+  { path: 'workers',canActivate:[AuthAdminGuard], component: WorkerslistComponent },
+  { path: 'forgot-password', component: ForgotPasswordPageComponent },
+  { path: 'reset-password',canActivate:[AuthAdminGuard], component: ResetPasswordFormComponent },
+  { path: 'update-database',canActivate:[AuthAdminGuard], component: UpdateDatabaseComponent },
+  { path: 'versions',canActivate:[AuthAdminGuard], component: VersionsComponent },
+  { path: 'users',canActivate:[AuthAdminGuard], component: ListUsersComponent },
   { path: 'access', component: AccessPageComponent },
 ];
 

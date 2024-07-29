@@ -23,6 +23,15 @@ import { RuleslistComponent } from './components/ruleslist/ruleslist.component';
 import { AddrulespopupComponent } from './components/addrulespopup/addrulespopup.component';
 import { AssigneerankingComponent } from './components/assigneeranking/assigneeranking.component';
 import { CreatedVsResolvedComponent } from './components/created-vs-resolved/created-vs-resolved.component';
+import { WorkerslistComponent } from './components/workerslist/workerslist.component';
+import { ForgotPasswordPageComponent } from './components/forgot-password-page/forgot-password-page.component';
+import { ResetPasswordFormComponent } from './components/reset-password-form/reset-password-form.component';
+import { UpdateDatabaseComponent } from './components/update-database/update-database.component';
+import { VersionsComponent } from './components/versions/versions.component';
+import { ListUsersComponent } from './components/list-users/list-users.component';
+import { MasteredAssigneesComponent } from './components/mastered-assignees/mastered-assignees.component';
+import { TrainingAssigneesComponent } from './components/training-assignees/training-assignees.component';
+
 
 
 
@@ -43,7 +52,15 @@ import { CreatedVsResolvedComponent } from './components/created-vs-resolved/cre
     RuleslistComponent,
     AddrulespopupComponent,
     AssigneerankingComponent,
-    CreatedVsResolvedComponent
+    CreatedVsResolvedComponent,
+    WorkerslistComponent,
+    ForgotPasswordPageComponent,
+    ResetPasswordFormComponent,
+    UpdateDatabaseComponent,
+    VersionsComponent,
+    ListUsersComponent,
+    MasteredAssigneesComponent,
+    TrainingAssigneesComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +71,7 @@ import { CreatedVsResolvedComponent } from './components/created-vs-resolved/cre
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,
+    
 
     
     
